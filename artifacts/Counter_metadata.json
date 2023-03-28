@@ -20,19 +20,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "count",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "counter",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -67,11 +54,11 @@
 	},
 	"sources": {
 		"test.sol": {
-			"keccak256": "0x7d634db5863b465df3aa6143edc3eaf57bb01628ec01b12b61784a03e6d9089f",
+			"keccak256": "0x3f23536936eeac35c8a85426697e8c9960ea80d999aace2298828776bb3d95c6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c4b9cbc917b800e33f45ff670529c57c4004e091a4d6b9bf3f702aeaf46e4056",
-				"dweb:/ipfs/QmX2T8WDX7AeDUkhzCy87WBEprWsAUaEo9xzFCrDR3WEg6"
+				"bzz-raw://d27e01570a5aa07e2da50a260aeab2a9c5baa0630d1bbe6c3fdb6d15d908813f",
+				"dweb:/ipfs/QmTExWhZhPpywh7i76wbAZkDTuNRGqDyfKfUC2NcCanuJh"
 			]
 		}
 	},
