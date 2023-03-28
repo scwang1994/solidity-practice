@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "count",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_counter",
+						"type": "address"
+					}
+				],
+				"name": "examples",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"week4/04_interface.sol": "CallInterface"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"week4/04_interface.sol": {
+			"keccak256": "0xa0bee98b223a933e7c694ab7d0cd7ed0592a714d6499d7cc2e53005f28fcba2b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f24c1e885359d88e906840c1b2360b5d4efbd7f4413e17e73dff7277d24ce071",
+				"dweb:/ipfs/QmTdG6xKoWyDoyR4JB1JYbhooueDeC2PccLb8ETxxQ4GjH"
+			]
+		}
+	},
+	"version": 1
+}
