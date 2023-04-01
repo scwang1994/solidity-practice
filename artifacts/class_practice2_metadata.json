@@ -8,22 +8,24 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "counterAddress",
-						"type": "address"
+						"internalType": "string",
+						"name": "_data",
+						"type": "string"
 					}
 				],
+				"name": "calldataExample",
+				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "inspectInspectOrigin",
+				"name": "data",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "string",
 						"name": "",
-						"type": "address"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -31,12 +33,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "inspectInspectSender",
+				"name": "data2",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "string",
 						"name": "",
-						"type": "address"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -44,41 +46,41 @@
 			},
 			{
 				"inputs": [],
-				"name": "inspectOrigin",
+				"name": "data3",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "string",
 						"name": "",
-						"type": "address"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "inspectSender",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
+						"internalType": "string",
+						"name": "_data",
+						"type": "string"
 					}
 				],
-				"stateMutability": "view",
+				"name": "memoryExample",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "myCounter",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "contract Counter",
-						"name": "",
-						"type": "address"
+						"internalType": "string",
+						"name": "_data",
+						"type": "string"
 					}
 				],
-				"stateMutability": "view",
+				"name": "test",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -95,7 +97,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"week4/11_contract_call_contract.sol": "CounterCaller"
+			"00_class_practice_2.sol": "class_practice2"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -109,12 +111,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"week4/11_contract_call_contract.sol": {
-			"keccak256": "0xb650b7b7e4dd13d255d8a3fed9e5294b8ad90671d9a582bf87d5a7e81f325771",
-			"license": "MIT",
+		"00_class_practice_2.sol": {
+			"keccak256": "0x55c4470ca15be8448d247e4494ef7a748bcb55f0437cd1b56fbfe6bb99db6b12",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://2aa9510c03ab087e0a3a533563f031f7badb1f2065c28a790c7f2f9323beda1c",
-				"dweb:/ipfs/QmWCEqmbBeAnQuFwGmRhrCgf4BQUCaiAcDcLyfSXPufouh"
+				"bzz-raw://70eccb52c8b61200354ed43ed61e7be1b6faeaff48b07e00187bd7621241cd9c",
+				"dweb:/ipfs/Qma6qUAzgEKM1oeLPfL9CVbm16WP74dyGMVVN173L4w9PS"
 			]
 		}
 	},

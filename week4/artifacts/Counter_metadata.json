@@ -7,40 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "increment",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "inspectOrigin",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "inspectSender",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "number",
+				"name": "count",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -49,6 +16,20 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "dev",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "inc",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -65,7 +46,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"week4/11_contract_call_contract.sol": "Counter"
+			"week4/04_1_Counter.sol": "Counter"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -79,12 +60,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"week4/11_contract_call_contract.sol": {
-			"keccak256": "0xb19d0c95e60f8b54f935d1e2cd24b6b62d4a45f73bd091fd95cd25ad90723e8b",
+		"week4/04_1_Counter.sol": {
+			"keccak256": "0xe5945e46c9bd0e3081adba9b4f4308c1cf838830ddfc02bea8537b4197e1f8d7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3064c1286af563a203c6361147e2538bfa2758ce0067a6c998686e44cf7a546c",
-				"dweb:/ipfs/QmeGCLLTJw62FpFqFh7p1kL7xVK7aH9Yv5KTytPbmZ2eg7"
+				"bzz-raw://91d6e7d13c2f9a60d8ff07106aeb9ff95a9c80c0412adf800fa6fca418fd3259",
+				"dweb:/ipfs/Qmc35Dyq9VnccSvybag8eoTHJ5BgYqHwkHQ5iPrjuYimpH"
 			]
 		}
 	},

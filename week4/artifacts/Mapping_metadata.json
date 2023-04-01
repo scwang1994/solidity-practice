@@ -84,11 +84,11 @@
 	},
 	"sources": {
 		"week4/01_mapping.sol": {
-			"keccak256": "0xae749f245332d21c3a76f21c88b366466f809fc0487375c7aff53581a75feac9",
+			"keccak256": "0x0b894a15ae1011dde12e4a4b3678a80436630454219be7eda5f424361e5f2ee9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cca0ed62055cd42d9e648f0a519de1cc809e96ca0f552b51dd4380610b4248d8",
-				"dweb:/ipfs/QmaHsfuE7YTgjDAFVhjAdNKKVrJHaLni8RAVCq2f1zSyfA"
+				"bzz-raw://e2b7c0dc3eaa17587a76ee9b6a6bcca42055ad70813b85a4c77d0daea9f216ad",
+				"dweb:/ipfs/QmYNtFFFz6QY8kYQFEKLehsKHpV32ANpAzRYnqFgCedASY"
 			]
 		}
 	},

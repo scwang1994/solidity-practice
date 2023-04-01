@@ -11,12 +11,12 @@ contract Mapping {
 
     function examples() external {
         balances[msg.sender] = 123;
-        uint bal = balances[msg.sender];
+        uint bal = balances[msg.sender]; // 123
         uint bal2 = balances[address(1)]; // 0
 
         balances[msg.sender] += 456; // 123 + 456 = 579
         delete balances[msg.sender]; // 0
 
-        isFriend[msg.sender][address(this)] = true;
+        isFriend[msg.sender][address(this)] = true; // set  msg.sender a friend of this address = true
     }
 }

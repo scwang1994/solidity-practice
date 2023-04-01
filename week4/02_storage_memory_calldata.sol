@@ -27,7 +27,7 @@ contract DataLocations {
         return memArr;
     }
 
-    function _internal(uint[] calldata y) private {
+    function _internal(uint[] calldata y) private { // mostly been used as parameter
         uint x = y[0];
     }
 }

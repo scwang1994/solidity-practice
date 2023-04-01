@@ -28,6 +28,10 @@ contract CounterCaller {
         return myCounter.inspectOrigin();
     }
 
+    function inspectInspectSender() public view returns(address) {
+        return myCounter.inspectSender();
+    }
+
     function inspectSender() public view returns(address) {
         return msg.sender;
     }

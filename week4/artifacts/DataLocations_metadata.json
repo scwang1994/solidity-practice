@@ -82,11 +82,11 @@
 	},
 	"sources": {
 		"week4/02_storage_memory_calldata.sol": {
-			"keccak256": "0x7c51aea388045770877e2db1f5c33e4af34f33aaadc4e71fc57a3fb692c814a9",
+			"keccak256": "0xfedf4fae05530b97849c1a7797dc3f1b5dacf38967f2e6772c9b5d099f030f0c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://81aaef99b7b375882cca97fece7fb3aac27ca3b39cd35dd4b82b1e657f3de31c",
-				"dweb:/ipfs/QmPhmRTZZzKiyZRfsMtbmS9nzwApjZPwrbBdzSGMnQfqhs"
+				"bzz-raw://42cb48d3a0458981d969f69fa91d2df72810b0fd5620d3875fe0c915a43c5452",
+				"dweb:/ipfs/QmXJJZi814thaKNeFSt5DHRsmfNkZFpjHdAwB18HKzjwEb"
 			]
 		}
 	},
