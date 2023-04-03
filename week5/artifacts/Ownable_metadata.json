@@ -7,14 +7,26 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "increment",
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "anyOneCanCall",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "inspectOrigin",
+				"name": "onlyOwnerCanCallThisFunc",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -26,29 +38,16 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "inspectSender",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "_newOwner",
 						"type": "address"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "number",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"name": "setOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -65,7 +64,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"week4/11_contract_call_contract.sol": "Counter"
+			"week5/Ownable.sol": "Ownable"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -79,12 +78,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"week4/11_contract_call_contract.sol": {
-			"keccak256": "0xb650b7b7e4dd13d255d8a3fed9e5294b8ad90671d9a582bf87d5a7e81f325771",
+		"week5/Ownable.sol": {
+			"keccak256": "0xc8683bbaf42a043fd28686774258e0ccc3ac7ce49cae2ee0f9fcb61eeaafb623",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2aa9510c03ab087e0a3a533563f031f7badb1f2065c28a790c7f2f9323beda1c",
-				"dweb:/ipfs/QmWCEqmbBeAnQuFwGmRhrCgf4BQUCaiAcDcLyfSXPufouh"
+				"bzz-raw://09804a30c47e22abea9454337bfcc804d73e6f9581293ffab090fce2197e996e",
+				"dweb:/ipfs/QmPcvuC3SAt5M8ekXgDsLvFpa56bKVeqmvwXUdHawxZcxD"
 			]
 		}
 	},

@@ -7,40 +7,47 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "increment",
+				"name": "examples",
 				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "inspectOrigin",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "inspectSender",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
+				"name": "examples2",
+				"outputs": [],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "number",
+				"name": "externalFunc",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "publicFunc",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "z",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -65,7 +72,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"week4/11_contract_call_contract.sol": "Counter"
+			"week5/Visibility.sol": "VisibilityChild"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -79,12 +86,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"week4/11_contract_call_contract.sol": {
-			"keccak256": "0xb650b7b7e4dd13d255d8a3fed9e5294b8ad90671d9a582bf87d5a7e81f325771",
+		"week5/Visibility.sol": {
+			"keccak256": "0x23b23d269d229771133462fd03e8264eab454393750170044cec7ae48619f46f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2aa9510c03ab087e0a3a533563f031f7badb1f2065c28a790c7f2f9323beda1c",
-				"dweb:/ipfs/QmWCEqmbBeAnQuFwGmRhrCgf4BQUCaiAcDcLyfSXPufouh"
+				"bzz-raw://3eec253ee1934013dfde58537c28405910fbaeabef4610cbca10f2494125158b",
+				"dweb:/ipfs/QmXq2hZvYhRYPeYR6DSPYvBcTkhiSbeZvUWiwLv2h29vZM"
 			]
 		}
 	},

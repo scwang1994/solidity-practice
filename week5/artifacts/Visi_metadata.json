@@ -6,14 +6,15 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "balances",
+				"inputs": [],
+				"name": "examples",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "externalFunc",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -21,35 +22,30 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "examples",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "publicFunc",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "isFriend",
+				"inputs": [],
+				"name": "z",
 				"outputs": [
 					{
-						"internalType": "bool",
+						"internalType": "uint256",
 						"name": "",
-						"type": "bool"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -69,7 +65,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"week4/01_mapping.sol": "Mapping"
+			"week5/Visibility.sol": "Visi"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -83,12 +79,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"week4/01_mapping.sol": {
-			"keccak256": "0x0b894a15ae1011dde12e4a4b3678a80436630454219be7eda5f424361e5f2ee9",
+		"week5/Visibility.sol": {
+			"keccak256": "0x0f40c6113bc41186c03eee133907989efb3048295ae47d065b436f5e6b882480",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e2b7c0dc3eaa17587a76ee9b6a6bcca42055ad70813b85a4c77d0daea9f216ad",
-				"dweb:/ipfs/QmYNtFFFz6QY8kYQFEKLehsKHpV32ANpAzRYnqFgCedASY"
+				"bzz-raw://224fed3765c6f354dcf46816cf243d6de5d4fa33cc8ec3fbc93d9cec95a5a5bd",
+				"dweb:/ipfs/QmZxSCWT8yiYPPiTDaXyY17rzLUoQifypfuAHLMnZQnAPt"
 			]
 		}
 	},

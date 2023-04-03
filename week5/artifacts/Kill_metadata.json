@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "kill",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testCall",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"week5/DeletingContracts.sol": "Kill"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"week5/DeletingContracts.sol": {
+			"keccak256": "0x79b9d1674861bb0e44c8208e6d73c7f0c3593634c91c8d843a171e2a8149436f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b191563689ab2db8de01eb3665b583f5cb58bd750bbd3aec5cafb46c5d075db9",
+				"dweb:/ipfs/QmV5hMpsGHeXsGnyWy73gaMvGTSgSptXhztmmwcs5HK8re"
+			]
+		}
+	},
+	"version": 1
+}

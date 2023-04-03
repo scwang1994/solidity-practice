@@ -6,14 +6,15 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "balances",
+				"inputs": [],
+				"name": "examples",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "externalFunc",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -21,35 +22,30 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "examples",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "publicFunc",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "isFriend",
+				"inputs": [],
+				"name": "z",
 				"outputs": [
 					{
-						"internalType": "bool",
+						"internalType": "uint256",
 						"name": "",
-						"type": "bool"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -69,7 +65,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"week4/01_mapping.sol": "Mapping"
+			"week5/Visibility.sol": "VisibilityBase"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -83,12 +79,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"week4/01_mapping.sol": {
-			"keccak256": "0x0b894a15ae1011dde12e4a4b3678a80436630454219be7eda5f424361e5f2ee9",
+		"week5/Visibility.sol": {
+			"keccak256": "0x23b23d269d229771133462fd03e8264eab454393750170044cec7ae48619f46f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e2b7c0dc3eaa17587a76ee9b6a6bcca42055ad70813b85a4c77d0daea9f216ad",
-				"dweb:/ipfs/QmYNtFFFz6QY8kYQFEKLehsKHpV32ANpAzRYnqFgCedASY"
+				"bzz-raw://3eec253ee1934013dfde58537c28405910fbaeabef4610cbca10f2494125158b",
+				"dweb:/ipfs/QmXq2hZvYhRYPeYR6DSPYvBcTkhiSbeZvUWiwLv2h29vZM"
 			]
 		}
 	},

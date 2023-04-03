@@ -6,14 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "balances",
+				"inputs": [],
+				"name": "num",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -26,30 +20,25 @@
 			},
 			{
 				"inputs": [],
-				"name": "examples",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "pureFunc",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "isFriend",
+				"inputs": [],
+				"name": "viewFunc",
 				"outputs": [
 					{
-						"internalType": "bool",
+						"internalType": "uint256",
 						"name": "",
-						"type": "bool"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -69,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"week4/01_mapping.sol": "Mapping"
+			"week5/ViewAndPureFunctions.sol": "ViewAndPureFunctions"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -83,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"week4/01_mapping.sol": {
-			"keccak256": "0x0b894a15ae1011dde12e4a4b3678a80436630454219be7eda5f424361e5f2ee9",
+		"week5/ViewAndPureFunctions.sol": {
+			"keccak256": "0x54e1c551b66fe2a84797076c45af5e0b9136386122d4f44ee43d8fa73c04a72c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e2b7c0dc3eaa17587a76ee9b6a6bcca42055ad70813b85a4c77d0daea9f216ad",
-				"dweb:/ipfs/QmYNtFFFz6QY8kYQFEKLehsKHpV32ANpAzRYnqFgCedASY"
+				"bzz-raw://838be713bdaea54ed9a8c1d03660347633004a814fc81de064cc1af134a29482",
+				"dweb:/ipfs/QmbX3QgtzX4fFRS5pA3KJU3p4Xa9oTh6iogYbPaSWekzct"
 			]
 		}
 	},

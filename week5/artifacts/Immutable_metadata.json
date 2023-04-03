@@ -6,19 +6,25 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "foo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					}
-				],
-				"name": "balances",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -26,30 +32,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "examples",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "isFriend",
+				"name": "x",
 				"outputs": [
 					{
-						"internalType": "bool",
+						"internalType": "uint256",
 						"name": "",
-						"type": "bool"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -69,7 +57,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"week4/01_mapping.sol": "Mapping"
+			"week5/Immutable.sol": "Immutable"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -83,12 +71,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"week4/01_mapping.sol": {
-			"keccak256": "0x0b894a15ae1011dde12e4a4b3678a80436630454219be7eda5f424361e5f2ee9",
+		"week5/Immutable.sol": {
+			"keccak256": "0xfd53dbcdd231c0d8f0ebaa71c0bd477fc1e896c9f2692f3cbfd7dd79f1752869",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e2b7c0dc3eaa17587a76ee9b6a6bcca42055ad70813b85a4c77d0daea9f216ad",
-				"dweb:/ipfs/QmYNtFFFz6QY8kYQFEKLehsKHpV32ANpAzRYnqFgCedASY"
+				"bzz-raw://c3aa52fc8816ccfcc36ffea6271a27de6a6210d6e31b228ffaf87652e2799dbf",
+				"dweb:/ipfs/QmcyBW5e52E4uXQispLws3xihAUMGLbv8CKuYevFmLo7eV"
 			]
 		}
 	},

@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"week5/AccessControl.sol": "A"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"week5/AccessControl.sol": {
+			"keccak256": "0x1350d679f2b5d2b2820b42a6fa55a4f37eba7304fd686ab8485c406e84c0234d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://15b569712e094a9b07398bc3cf20f2843fffcede6d40788d8afc8073c9482e6d",
+				"dweb:/ipfs/QmaWotxdUz1BPFCVnbK6Z9U6L4AUkHDbKLNG3f2t5Ywhtm"
+			]
+		}
+	},
+	"version": 1
+}
