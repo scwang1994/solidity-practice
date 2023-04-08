@@ -11,18 +11,23 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "anyOneCanCall",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "onlyOwnerCanCallThisFunc",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
 			},
 			{
 				"inputs": [],
@@ -41,11 +46,11 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_newOwner",
+						"name": "newOwner",
 						"type": "address"
 					}
 				],
-				"name": "setOwner",
+				"name": "transferOwnership",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -53,7 +58,14 @@
 		],
 		"devdoc": {
 			"kind": "dev",
-			"methods": {},
+			"methods": {
+				"transferOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.",
+					"params": {
+						"newOwner": "The address to transfer ownership to."
+					}
+				}
+			},
 			"version": 1
 		},
 		"userdoc": {
@@ -64,7 +76,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"week5/Ownable.sol": "Ownable"
+			"week5/TodoListMeVer.sol": "Ownable"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -78,12 +90,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"week5/Ownable.sol": {
-			"keccak256": "0xc8683bbaf42a043fd28686774258e0ccc3ac7ce49cae2ee0f9fcb61eeaafb623",
+		"week5/TodoListMeVer.sol": {
+			"keccak256": "0x26286e3717bd0207143c1eef45d1782b3c43def0c0741ccd6922b79543db199c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://09804a30c47e22abea9454337bfcc804d73e6f9581293ffab090fce2197e996e",
-				"dweb:/ipfs/QmPcvuC3SAt5M8ekXgDsLvFpa56bKVeqmvwXUdHawxZcxD"
+				"bzz-raw://7e6c0ccedffb3fb822834b569b5726f04488d321e1440143915180cc67f5e461",
+				"dweb:/ipfs/QmY1GKfJSdfD2aTGEJBmGZwsQ8LgodueqYbKc8rofpqg9z"
 			]
 		}
 	},

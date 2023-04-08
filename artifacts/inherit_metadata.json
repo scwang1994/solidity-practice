@@ -1,0 +1,60 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "externalVer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "publicVer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"FunctionVisibility.sol": "inherit"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"FunctionVisibility.sol": {
+			"keccak256": "0x3df6e88d48feaccb7c080ff7fd2b4e329751413080b4f71fbaa41eeb73310f42",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9e87d35e76e218286c5b0b58978c3f1642def4cdc3e188b6f9a13256b289764a",
+				"dweb:/ipfs/QmaHn7Bv2VBNtaPyQvZGi3PDg4BLbB7GummLsj6J1efwdQ"
+			]
+		}
+	},
+	"version": 1
+}

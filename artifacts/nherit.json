@@ -1,0 +1,99 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "6080604052348015600f57600080fd5b5060818061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c8063927c66f7146037578063fe87ea3014603f575b600080fd5b603d6047565b005b60456049565b005b565b56fea2646970667358221220c2c4de4536aac7e05bb2a7b7050eb6d3bc0058e6932d85c3a2b223b939dbc80064736f6c63430008130033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x81 DUP1 PUSH2 0x1E PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x32 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x927C66F7 EQ PUSH1 0x37 JUMPI DUP1 PUSH4 0xFE87EA30 EQ PUSH1 0x3F JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x3D PUSH1 0x47 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x45 PUSH1 0x49 JUMP JUMPDEST STOP JUMPDEST JUMP JUMPDEST JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xC2 0xC4 0xDE GASLIMIT CALLDATASIZE 0xAA 0xC7 0xE0 JUMPDEST 0xB2 0xA7 0xB7 SDIV 0xE 0xB6 0xD3 0xBC STOP PC 0xE6 SWAP4 0x2D DUP6 0xC3 LOG2 0xB2 0x23 0xB9 CODECOPY 0xDB 0xC8 STOP PUSH5 0x736F6C6343 STOP ADDMOD SGT STOP CALLER ",
+			"sourceMap": "264:192:0:-:0;;;;;;;;;;;;;;;;;;;"
+		},
+		"deployedBytecode": {
+			"functionDebugData": {
+				"@externalVer_30": {
+					"entryPoint": 73,
+					"id": 30,
+					"parameterSlots": 0,
+					"returnSlots": 0
+				},
+				"@publicVer_22": {
+					"entryPoint": 71,
+					"id": 22,
+					"parameterSlots": 0,
+					"returnSlots": 0
+				}
+			},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "6080604052348015600f57600080fd5b506004361060325760003560e01c8063927c66f7146037578063fe87ea3014603f575b600080fd5b603d6047565b005b60456049565b005b565b56fea2646970667358221220c2c4de4536aac7e05bb2a7b7050eb6d3bc0058e6932d85c3a2b223b939dbc80064736f6c63430008130033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x32 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x927C66F7 EQ PUSH1 0x37 JUMPI DUP1 PUSH4 0xFE87EA30 EQ PUSH1 0x3F JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x3D PUSH1 0x47 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x45 PUSH1 0x49 JUMP JUMPDEST STOP JUMPDEST JUMP JUMPDEST JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xC2 0xC4 0xDE GASLIMIT CALLDATASIZE 0xAA 0xC7 0xE0 JUMPDEST 0xB2 0xA7 0xB7 SDIV 0xE 0xB6 0xD3 0xBC STOP PC 0xE6 SWAP4 0x2D DUP6 0xC3 LOG2 0xB2 0x23 0xB9 CODECOPY 0xDB 0xC8 STOP PUSH5 0x736F6C6343 STOP ADDMOD SGT STOP CALLER ",
+			"sourceMap": "264:192:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;286:35;;;:::i;:::-;;372:39;;;:::i;:::-;;286:35;:::o;372:39::-;:::o"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "25800",
+				"executionCost": "81",
+				"totalCost": "25881"
+			},
+			"external": {
+				"externalVer()": "144",
+				"publicVer()": "122"
+			},
+			"internal": {
+				"internalVer()": "infinite",
+				"privateVer()": "infinite"
+			}
+		},
+		"methodIdentifiers": {
+			"externalVer()": "fe87ea30",
+			"publicVer()": "927c66f7"
+		}
+	},
+	"abi": [
+		{
+			"inputs": [],
+			"name": "externalVer",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "publicVer",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		}
+	]
+}
