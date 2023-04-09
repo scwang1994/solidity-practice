@@ -16,7 +16,7 @@ TodoList
     kill() gas: 32605
 
 SaveGasVer
-    deploy gas: 917581
+    deploy gas: 891408
     create() gas: 83844
     update() gas: 55013
     get() gas: 8417
@@ -25,7 +25,7 @@ SaveGasVer
 */
 
 contract TodoList {
-    address public owner;
+    address public immutable owner;
     Task[] public tasks;
 
     constructor() {

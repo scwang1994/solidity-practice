@@ -1,4 +1,15 @@
+# hw5
+* View and Pure Functions | Solidity 0.8
+* Function Modifier | Solidity 0.8
+* Visibility | Solidity 0.8
+* Immutable | Solidity 0.8
+* Deleting Contracts | Solidity 0.8
+* Ownable | Solidity 0.8
+* Access Control | Solidity 0.8
+* For and While Loops | Solidity 0.8
+
 # hw4 
+
 * Mapping | Solidity 0.8
 * Storage, Memory and Calldata | Solidity 0.8
 * Error | Solidity 0.8

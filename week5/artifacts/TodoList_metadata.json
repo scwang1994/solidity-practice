@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.19+commit.7dd6d404"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
@@ -88,7 +88,7 @@
 						"type": "bool"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -167,7 +167,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"week5/TodoListBasicVer.sol": "TodoList"
+			"week5/TodoListSaveGasVer.sol": "TodoList"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -181,12 +181,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"week5/TodoListBasicVer.sol": {
-			"keccak256": "0xa0e0ee9d6fdc9585b411ef8110db6810dd4cbf00b391f34feec30995ed2062d8",
+		"week5/TodoListSaveGasVer.sol": {
+			"keccak256": "0x963713fe0985cd3b94899c345efd77f91ae0904c5328d55da2a419b746e99ac4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://68b716a105346b381d311e41895e97a102a1554034a7f579badc8c848b3eefa3",
-				"dweb:/ipfs/QmXzh8fwR1LGiyjuzQbzGAR386S6j8qEYSCZfiviDMzJiV"
+				"bzz-raw://d107edabefcc44e070be11ea6e5f370faf2b00676f1a23282fc020d4c3df7a09",
+				"dweb:/ipfs/QmS5vPf95PdM1NSjsaEMZK7MYBxHVNZqGx3BDwogjcS2W8"
 			]
 		}
 	},
