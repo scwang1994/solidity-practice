@@ -19,7 +19,7 @@ SaveGasVer
     deploy gas: 891408
     create() gas: 83844
     update() gas: 55013
-    get() gas: 8417
+    get() gas: 0
     kill() gas: 32605
 
 */

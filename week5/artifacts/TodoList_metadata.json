@@ -182,11 +182,11 @@
 	},
 	"sources": {
 		"week5/TodoListSaveGasVer.sol": {
-			"keccak256": "0x963713fe0985cd3b94899c345efd77f91ae0904c5328d55da2a419b746e99ac4",
+			"keccak256": "0x24777acca80b57c242b8d1a98aa371a99cc739952560e1588ef6e863501d0a66",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d107edabefcc44e070be11ea6e5f370faf2b00676f1a23282fc020d4c3df7a09",
-				"dweb:/ipfs/QmS5vPf95PdM1NSjsaEMZK7MYBxHVNZqGx3BDwogjcS2W8"
+				"bzz-raw://a996b01abf831f546459627423009e1f6fccf2592d3c1b6ddb94ddc936781c89",
+				"dweb:/ipfs/QmbVij69c2VVhTVLH4K8wG6kdfFXuXtpRpWbaPBS2ydKj4"
 			]
 		}
 	},
