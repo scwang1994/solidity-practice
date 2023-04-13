@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "s",
+						"type": "uint256"
+					}
+				],
+				"name": "calls",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"week6/class/StaticcallAndCall.sol": "Call"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"week6/class/StaticcallAndCall.sol": {
+			"keccak256": "0x473626948fd3a2aaffa480e293253af97768e1d956df7126e86c0b762d08890b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://6f4a1f6e49b8c48a336499f8a018e40c9ac153e238c40f57f9c63f4d6e6fde43",
+				"dweb:/ipfs/QmdqXu2kwH9EYbRsUL8wdJC3qznwfUGfCMw73ZpMrRfw3V"
+			]
+		}
+	},
+	"version": 1
+}

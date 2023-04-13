@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getSender",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"week6/class/DelegatecallPractice.sol": "C"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"week6/class/DelegatecallPractice.sol": {
+			"keccak256": "0xb190240926b26d90c152bcd21fd96fb2b6d798268759c383f598eb11f142851e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://90f2042ea8021dd641253ed6d899b935a00c924c4e8a5eaddbaab42d274e8198",
+				"dweb:/ipfs/QmT1xUqUv3bZyrtvpBz1VEjJ9HrAhigFPWKtwEQnb5nAPR"
+			]
+		}
+	},
+	"version": 1
+}
