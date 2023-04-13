@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"week6/VerifySignature.sol": "Verify"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"week6/VerifySignature.sol": {
+			"keccak256": "0x565ea6115104f5f1a7e8231a7faff9c26f18decf1caa532f6b25d137545cfc36",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://84313267bb4196e89d3d80841c71814dc3cfb6cc08616581c4663f41a61432e5",
+				"dweb:/ipfs/QmZrWV4XVnAMhR5qdaME3gEeTD17K7W6gWnGyAcSMPJoay"
+			]
+		}
+	},
+	"version": 1
+}

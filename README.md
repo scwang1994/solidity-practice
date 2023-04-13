@@ -1,3 +1,11 @@
+# hw6
+* Payable | Solidity 0.8
+* Fallback | Solidity 0.8
+* Function Selector | Solidity 0.8
+* Verify Signature | Solidity 0.8
+* 看補充影片：Send ETH，並說明 3 種 send ETH 的方法與差異
+* Simple Trick to Save Gas in Your Smart Contract
+
 # hw5
 * View and Pure Functions | Solidity 0.8
 * Function Modifier | Solidity 0.8

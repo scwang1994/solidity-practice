@@ -7,6 +7,18 @@
 		"abi": [
 			{
 				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getBalance",
 				"outputs": [
 					{
@@ -19,16 +31,16 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
 					{
-						"internalType": "contract Kill",
-						"name": "_kill",
+						"internalType": "address payable",
+						"name": "",
 						"type": "address"
 					}
 				],
-				"name": "kill",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -45,7 +57,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"week5/DeletingContracts.sol": "Helper"
+			"week6/Payable.sol": "Payable"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -59,12 +71,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"week5/DeletingContracts.sol": {
-			"keccak256": "0x79b9d1674861bb0e44c8208e6d73c7f0c3593634c91c8d843a171e2a8149436f",
+		"week6/Payable.sol": {
+			"keccak256": "0xd8f1f5380fc268c53cca39517c521ab588376bc3d5e61dc8f69736d06ed6183f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b191563689ab2db8de01eb3665b583f5cb58bd750bbd3aec5cafb46c5d075db9",
-				"dweb:/ipfs/QmV5hMpsGHeXsGnyWy73gaMvGTSgSptXhztmmwcs5HK8re"
+				"bzz-raw://127f2cfec49099e4846cfbf0bf1115941e8cd7c712672feb6e9f6af3a07a7829",
+				"dweb:/ipfs/QmUbFBhSY3fZWKJ7M5NxMc9BLE7vskqrjxRm6nWgVBfhh6"
 			]
 		}
 	},

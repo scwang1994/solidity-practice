@@ -6,25 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "payable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "kill",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "testCall",
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_func",
+						"type": "string"
+					}
+				],
+				"name": "getSelector",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "bytes4",
 						"name": "",
-						"type": "uint256"
+						"type": "bytes4"
 					}
 				],
 				"stateMutability": "pure",
@@ -44,7 +38,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"week5/DeletingContracts.sol": "Kill"
+			"week6/FunctionSelector.sol": "FunctionSelector"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -58,12 +52,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"week5/DeletingContracts.sol": {
-			"keccak256": "0x79b9d1674861bb0e44c8208e6d73c7f0c3593634c91c8d843a171e2a8149436f",
+		"week6/FunctionSelector.sol": {
+			"keccak256": "0x4bfffba05592385cd90d6b2a1039957a2d3212c4fcbb7f6244024a90cf8dc8fd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b191563689ab2db8de01eb3665b583f5cb58bd750bbd3aec5cafb46c5d075db9",
-				"dweb:/ipfs/QmV5hMpsGHeXsGnyWy73gaMvGTSgSptXhztmmwcs5HK8re"
+				"bzz-raw://6c7dcf231f25e29c274928b6a54aa2e2473d10cd2049dd0b9f1adcaa5b807cad",
+				"dweb:/ipfs/QmUrW6cxmq4ebqRt3nCEF8Wm5h6KVaJsDrpUSuuYutgdMc"
 			]
 		}
 	},

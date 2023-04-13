@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"week6/SimpleTrickToSaveGasInYourSmartContract.sol": "SaveGas"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"week6/SimpleTrickToSaveGasInYourSmartContract.sol": {
+			"keccak256": "0xe34fd824bf655e1e748fb0990b84df6beb36f76fe6a50b08c1a1f3268fd3f158",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6da10670e7461899d828e6aa32606b6d582050bc537d71b3b23451c2076d1b8a",
+				"dweb:/ipfs/QmVT3vYHQjbWat17ZGfxDDHCK5H6YxiUEXyTm7w31ZFFuv"
+			]
+		}
+	},
+	"version": 1
+}
