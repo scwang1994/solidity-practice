@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"week6/VerifySignature.sol": "VerifySignature"
+			"week6/SaveGas.sol": "SaveGas2"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -32,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"week6/VerifySignature.sol": {
-			"keccak256": "0x6a623ea39572407a70ecf1e83543ac95fb96c96ed8423d702b66c2dec6bbd954",
+		"week6/SaveGas.sol": {
+			"keccak256": "0x66924a5736bc637bf8dd9e6d2efb51abbb283e3703c26f9a92884005e70b65c7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://477dfbdba95f3062766f5e63beebbe23b4b35e7937cbc8e39551a4fab604a648",
-				"dweb:/ipfs/QmTwcpmiy6PL8o2uWYvGzqu5VaPU6gPcu4AXc9KFtk6X3v"
+				"bzz-raw://bab5a3d62a6f7e6d064f96c7f52e08158e8a180444e390082688bd6b5c9274b1",
+				"dweb:/ipfs/QmVCLYLvUhEoYyrkocVjnf2GxmdScq3PHsueqCSixGyQoE"
 			]
 		}
 	},

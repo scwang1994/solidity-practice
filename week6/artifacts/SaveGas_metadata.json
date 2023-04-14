@@ -4,7 +4,47 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"name": "cache",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "n",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "noCache",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -18,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"week6/SimpleTrickToSaveGasInYourSmartContract.sol": "SaveGas"
+			"week6/SaveGas.sol": "SaveGas"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -32,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"week6/SimpleTrickToSaveGasInYourSmartContract.sol": {
-			"keccak256": "0xe34fd824bf655e1e748fb0990b84df6beb36f76fe6a50b08c1a1f3268fd3f158",
+		"week6/SaveGas.sol": {
+			"keccak256": "0x34454805e200881076a609bb4db36ef14261c4cee7e6bba916baeb2ab2045ba7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6da10670e7461899d828e6aa32606b6d582050bc537d71b3b23451c2076d1b8a",
-				"dweb:/ipfs/QmVT3vYHQjbWat17ZGfxDDHCK5H6YxiUEXyTm7w31ZFFuv"
+				"bzz-raw://4d85f7a17d5b9c9f74dee12dfc0b7cd27a88bd02938c97a2db00d607c2323463",
+				"dweb:/ipfs/QmXvLqdh7YKehFE5H2a393UFbPpqfzH3VBGAE7yEG2p3Jx"
 			]
 		}
 	},
