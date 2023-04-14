@@ -57,11 +57,11 @@
 	},
 	"sources": {
 		"week6/SendETH.sol": {
-			"keccak256": "0xf7aa3c654a4a8646702797cb2525468fdebe408eed5132a79591184c7e978a9e",
+			"keccak256": "0xacca1e2043cc15cc300d170035a3596f46c7fa6ffdd91c1ed3fa7073e15afa75",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f38dca6148c588f43e7b952957298a025166b395275573909324a47c3b10b9bc",
-				"dweb:/ipfs/QmS7Dh8A84UAE9v92AWx9koRWMiR1JAWNjsa8AC7yYdsjV"
+				"bzz-raw://fb3e6c71b853b2e539e723ff8d5e9dc71a0795a44c655edb90f91cc60326d580",
+				"dweb:/ipfs/QmVR1bHDZdSRTxRULZU72U6EhTv8hEcwcY4rNGSzfGCVS5"
 			]
 		}
 	},
