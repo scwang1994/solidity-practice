@@ -43,7 +43,7 @@ contract TestCase is Test {
         uint balanceBefore = baycAddr.balance;
         // 4. mint Ape
         for (uint i = 0; i < 5; i++) {
-            bayc2.mintApe{value: 1.6 ether}(20);
+            bayc.mintApe{value: 1.6 ether}(20);
         }
         // 5. check mint 100 bayc
         uint mintNum = bayc.balanceOf(user1);
