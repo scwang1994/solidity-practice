@@ -145,8 +145,14 @@ describe("Weth9", () => {
     // console.log(allowanceAfter);
   })
 
-  // // more
-  // it("測項 11: ", async () => {
+  // more
+  it("測項 11-1: name 要等於 'Wrapped Ether'", async () => {
+    let name = await weth.name();
+    expect(name).to.equal("Wrapped Ether");
+  })
 
+  // it("測項 11-2: 驗證 withdraw 錯誤", async () => {
+  //   // user1 wants to withdraw 1 ETH, but dont have enough amount to do that.
+  //   await expect(weth.connect(user1).withdraw(amount)).to.be.revertedWith('withdraw exceed user balance');
   // })
 })
