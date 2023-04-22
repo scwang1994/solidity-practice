@@ -1,0 +1,46 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/wangsongqian/Desktop/SideProject/07_Appworks/week7/SolidityTestPractice/contracts/MyContract.sol": {
+      "lastModificationDate": 1681807733807,
+      "contentHash": "6c14e0cad3c7245bf7c1e969d9e45de9",
+      "sourceName": "contracts/MyContract.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "forge-std/=lib/forge-std/src/",
+            "murky/=lib/murky/src/",
+            "openzeppelin-contracts/=lib/murky/lib/openzeppelin-contracts/"
+          ]
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "MyContract"
+      ]
+    }
+  }
+}

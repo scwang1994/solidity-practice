@@ -151,8 +151,8 @@ describe("Weth9", () => {
     expect(name).to.equal("Wrapped Ether");
   })
 
-  // it("測項 11-2: 驗證 withdraw 錯誤", async () => {
-  //   // user1 wants to withdraw 1 ETH, but dont have enough amount to do that.
-  //   await expect(weth.connect(user1).withdraw(amount)).to.be.revertedWith('withdraw exceed user balance');
-  // })
+  it("測項 11-2: 驗證 withdraw revert matching error message", async () => {
+    // user1 wants to withdraw 1 ETH, but dont have enough amount to do that.
+    await expect(weth.connect(user1).withdraw(amount)).to.be.revertedWith('withdraw exceed user balance');
+  })
 })

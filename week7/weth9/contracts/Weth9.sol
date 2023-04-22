@@ -1,4 +1,4 @@
-pragma solidity ^0.4.18;
+pragma solidity ^0.4.26;
 
 contract WETH9 {
     string public name     = "Wrapped Ether";
@@ -21,7 +21,7 @@ contract WETH9 {
         Deposit(msg.sender, msg.value);
     }
     function withdraw(uint wad) public {
-        require(balanceOf[msg.sender] >= wad);
+        require(balanceOf[msg.sender] >= wad, "withdraw exceed user balance");
         balanceOf[msg.sender] -= wad;
         msg.sender.transfer(wad);
         Withdrawal(msg.sender, wad);
