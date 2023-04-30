@@ -2,43 +2,48 @@
 pragma solidity ^0.8.17;
 
 import "forge-std/Test.sol";
-import { UUPSProxy } from "../src/UUPSProxy.sol";
-import { ClockUUPS } from "../src/UUPSLogic/ClockUUPS.sol";
-import { ClockUUPSV2 } from "../src/UUPSLogic/ClockUUPSV2.sol";
+import {UUPSProxy} from "../src/UUPSProxy.sol";
+import {ClockUUPS} from "../src/UUPSLogic/ClockUUPS.sol";
+import {ClockUUPSV2} from "../src/UUPSLogic/ClockUUPSV2.sol";
 
 contract UUPSTest is Test {
-  
-  ClockUUPS public clock;
-  ClockUUPSV2 public clockV2;
-  UUPSProxy public uupsProxy;
-  uint256 public alarm1Time;
+    ClockUUPS public clock;
+    ClockUUPSV2 public clockV2;
+    UUPSProxy public uupsProxy;
+    uint256 public alarm1Time;
+    ClockUUPS public proxyClock;
 
-  address admin;
-  address user1;
+    address admin;
+    address user1;
 
-  function setUp() public {
-    admin = makeAddr("admin");
-    user1 = makeAddr("noob");
-    clock = new ClockUUPS();
-    clockV2 = new ClockUUPSV2();
-    vm.prank(admin);
-    // initialize UUPS proxy
-  }
+    // function setUp() public {
+    //     admin = makeAddr("admin");
+    //     user1 = makeAddr("noob");
+    //     clock = new ClockUUPS();
+    //     clockV2 = new ClockUUPSV2();
+    //     vm.prank(admin);
+    //     // initialize UUPS proxy
+    //     uupsProxy = new UUPSProxy(
+    //         abi.encodeWithSignature("initialize()"),
+    //         address(clock)
+    //     );
+    //     proxyClock = ClockUUPS(address(uupsProxy));
+    // }
 
-  function testProxyWorks() public {
-    // check Clock functionality is successfully proxied
-  }
+    // function testProxyWorks() public {
+    //     // check Clock functionality is successfully proxied
+    //     assertEq(proxyClock.getTimestamp(), block.timestamp);
+    // }
 
-  function testUpgradeToWorks() public {
-    // check upgradeTo works aswell
-  }
+    // function testUpgradeToWorks() public {
+    //     // check upgradeTo works aswell
+    // }
 
-  function testCantUpgrade() public {
-    // check upgradeTo should fail if implementation doesn't inherit Proxiable
-  }
-  
-  function testCantUpgradeIfLogicDoesntHaveUpgradeFunction() public {
-    // check upgradeTo should fail if implementation doesn't implement upgradeTo
-  }
+    // function testCantUpgrade() public {
+    //     // check upgradeTo should fail if implementation doesn't inherit Proxiable
+    // }
 
+    // function testCantUpgradeIfLogicDoesntHaveUpgradeFunction() public {
+    //     // check upgradeTo should fail if implementation doesn't implement upgradeTo
+    // }
 }

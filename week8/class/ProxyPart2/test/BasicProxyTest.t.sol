@@ -15,6 +15,7 @@ contract BasicProxyTest is Test {
 
     uint256 public alarm1Time;
     uint256 public alarm2Time;
+    address owner = makeAddr('owner');
 
     function setUp() public {
         clock = new Clock();
@@ -52,11 +53,25 @@ contract BasicProxyTest is Test {
 
     function testUpgradeAndCall() public {
         // TODO: calling initialize right after upgrade
+        // upgrade Logic contract to ClockV2
+        basicProxy = new BasicProxy(address(clockV2));
+        proxyClockV2 = ClockV2(address(basicProxy));
+        // check state hadn't been changed
+        require(proxyClockV2.initialized() == false, "Invalid");
+        proxyClockV2.initialize(456);
         // check state had been changed according to initialize
+        assertEq(proxyClockV2.initialized(), true);
     }
 
     function testChangeOwnerWontCollision() public {
         // TODO: call changeOwner to update owner
+        // upgrade Logic contract to ClockV2
+        basicProxy = new BasicProxy(address(clockV2));
+        proxyClockV2 = ClockV2(address(basicProxy));
+        // check state hadn't been changed
+        require(proxyClockV2.owner() == 0x0000000000000000000000000000000000000000, "Invalid");
+        proxyClockV2.changeOwner(owner);
         // check Clock functionality is successfully proxied
+        assertEq(proxyClockV2.owner(), owner);
     }
 }

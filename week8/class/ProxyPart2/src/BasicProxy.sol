@@ -18,16 +18,16 @@ contract BasicProxy is Proxy, Slots {
 
     receive() external payable {}
 
-    function upgradeTo(address _newImpl) public virtual {
-        _setSlotToAddress(slot, _newImpl);
-    }
+    // function upgradeTo(address _newImpl) public virtual {
+    //     _setSlotToAddress(slot, _newImpl);
+    // }
 
-    function upgradeToAndCall(
-        address _newImpl,
-        bytes memory data
-    ) public virtual {
-        _setSlotToAddress(slot, _newImpl);
-        (bool success, ) = _getSlotToAddress(slot).delegatecall(data);
-        require(success);
-    }
+    // function upgradeToAndCall(
+    //     address _newImpl,
+    //     bytes memory data
+    // ) public virtual {
+    //     _setSlotToAddress(slot, _newImpl);
+    //     (bool success, ) = _getSlotToAddress(slot).delegatecall(data);
+    //     require(success);
+    // }
 }

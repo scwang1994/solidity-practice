@@ -23,7 +23,7 @@ contract Transparent is Slots, BasicProxy {
         }
     }
 
-    function upgradeTo(address _newImpl) public override onlyAdmin {
+    function upgradeTo(address _newImpl) public onlyAdmin {
         // TODO: rewrite upgradeTo
         _setSlotToAddress(slot, _newImpl);
     }
@@ -31,7 +31,7 @@ contract Transparent is Slots, BasicProxy {
     function upgradeToAndCall(
         address _newImpl,
         bytes memory data
-    ) public override onlyAdmin {
+    ) public onlyAdmin {
         // TODO: rewrite upgradeToAndCall
         _setSlotToAddress(slot, _newImpl);
         (bool success, ) = _getSlotToAddress(slot).delegatecall(data);
