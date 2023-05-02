@@ -15,12 +15,8 @@ contract Transparent is Slots, BasicProxy {
 
     modifier onlyAdmin() {
         // TODO: finish onlyAdmin modifier
-        if (msg.sender == _getSlotToAddress(slot)) {
-            require(msg.sender == _getSlotToAddress(slot), "Not Admin");
-            _;
-        } else {
-            _fallback();
-        }
+        require(msg.sender == _getSlotToAddress(slotAdmin), "Not Admin");
+        _;
     }
 
     function upgradeTo(address _newImpl) public onlyAdmin {
@@ -40,7 +36,7 @@ contract Transparent is Slots, BasicProxy {
 
     fallback() external payable override {
         // rewrite fallback
-        require(msg.sender != _getSlotToAddress(slot));
+        require(msg.sender != _getSlotToAddress(slotAdmin));
         _fallback();
     }
 
