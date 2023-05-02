@@ -11,13 +11,13 @@ contract ClockUUPS is Clock, Proxiable, Slots {
 
     function upgradeTo(address _newImpl) public {
         // TODO: upgrade to new implementation
-        _setSlotToAddress(slot, _newImpl);
+        updateCodeAddress(_newImpl);
     }
 
     function upgradeToAndCall(address _newImpl, bytes memory data) public {
         // TODO: upgrade to new implementation and call initialize
-        _setSlotToAddress(slot, _newImpl);
-        (bool success, ) = _getSlotToAddress(slot).delegatecall(data);
+        updateCodeAddress(_newImpl);
+        (bool success, ) = _newImpl.delegatecall(data);
         require(success);
     }
 }

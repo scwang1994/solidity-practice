@@ -114,4 +114,6 @@ contract FiatTokenV3Test is Test {
         assertEq(proxyFiatTokenV3.balanceOf(user2), 50);
         vm.stopPrank();
     }
+
+    function test
 }
