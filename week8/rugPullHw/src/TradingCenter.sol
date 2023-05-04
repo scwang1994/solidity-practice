@@ -43,6 +43,7 @@ contract TradingCenter {
         require(initialized == false, "already initialized");
         usdt = _usdt;
         usdc = _usdc;
+        initialized = true;
     }
 
     function exchange(IERC20 token0, uint256 amount) public {
