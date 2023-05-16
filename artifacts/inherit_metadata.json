@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.19+commit.7dd6d404"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
@@ -14,9 +14,42 @@
 			},
 			{
 				"inputs": [],
+				"name": "externalVerInherit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "publicVer",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "publicVerInherit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "viewVer",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -33,7 +66,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"FunctionVisibility.sol": "inherit"
+			"FunctionVisibility.sol": "Inherit"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -48,11 +81,11 @@
 	},
 	"sources": {
 		"FunctionVisibility.sol": {
-			"keccak256": "0x3df6e88d48feaccb7c080ff7fd2b4e329751413080b4f71fbaa41eeb73310f42",
+			"keccak256": "0x54d4786362407133c4e4674fba293e3cbf6a132fecbbd3241eb634d7a770407d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9e87d35e76e218286c5b0b58978c3f1642def4cdc3e188b6f9a13256b289764a",
-				"dweb:/ipfs/QmaHn7Bv2VBNtaPyQvZGi3PDg4BLbB7GummLsj6J1efwdQ"
+				"bzz-raw://92132facaa250ab0055c336601a5e411b39a4db9ac4e13464a34c566619d561d",
+				"dweb:/ipfs/Qmdy8th9dexqDNktwyVPuYNyQ5wSyeqHGLXeKmbtj59pAR"
 			]
 		}
 	},
