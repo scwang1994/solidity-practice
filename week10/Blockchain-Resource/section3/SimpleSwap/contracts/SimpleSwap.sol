@@ -66,7 +66,19 @@ contract SimpleSwap is ISimpleSwap, ERC20 {
         require(amountAIn > 0, "SimpleSwap: INSUFFICIENT_INPUT_AMOUNT");
         require(amountBIn > 0, "SimpleSwap: INSUFFICIENT_INPUT_AMOUNT");
 
-        (amountA, amountB) = (amountAIn, amountBIn);
+        if (reserve0 == 0 && reserve1 == 0) {
+            (amountA, amountB) = (amountAIn, amountBIn);
+        } else {
+            uint amountBOptimal = quote(amountAIn, reserve0, reserve1);
+            if (amountBOptimal <= amountBIn) {
+                (amountA, amountB) = (amountAIn, amountBOptimal);
+            } else {
+                uint amountAOptimal = quote(amountBIn, reserve1, reserve0);
+                assert(amountAOptimal <= amountAIn);
+                (amountA, amountB) = (amountAOptimal, amountBIn);
+            }
+        }
+
         IERC20(token0).transferFrom(msg.sender, address(this), amountA);
         IERC20(token1).transferFrom(msg.sender, address(this), amountB);
         // mint
@@ -147,5 +159,14 @@ contract SimpleSwap is ISimpleSwap, ERC20 {
     function _update(uint balance0, uint balance1) private {
         reserve0 = uint112(balance0);
         reserve1 = uint112(balance1);
+    }
+
+    /// @notice get the actual amount of tokenB
+    /// @param amountA The amount of tokenA received
+    /// @param reserveA The reserve of tokenA
+    /// @param reserveB The reserve of tokenB
+    /// @return amountB The actual amount of tokenB
+    function quote(uint amountA, uint reserveA, uint reserveB) internal pure returns (uint amountB) {
+        amountB = amountA.mul(reserveB) / reserveA;
     }
 }
