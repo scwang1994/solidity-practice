@@ -15,7 +15,7 @@ contract SimpleSwapSetUp is Test, ISimpleSwapEvent {
     TestERC20 tokenB;
     uint256 tokenADecimals;
     uint256 tokenBDecimals;
-    uint256 slpDecimals;
+    uint256 slpDecimals = 18;
 
     SimpleSwap simpleSwap;
 
