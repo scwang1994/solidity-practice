@@ -22,7 +22,7 @@ contract SimpleSwap is ISimpleSwap, ERC20 {
         require(isContract(tokenA), "SimpleSwap: TOKENA_IS_NOT_CONTRACT");
         require(isContract(tokenB), "SimpleSwap: TOKENB_IS_NOT_CONTRACT");
         require(tokenA != tokenB, "SimpleSwap: TOKENA_TOKENB_IDENTICAL_ADDRESS");
-        (token0, token1) = tokenA < tokenB ? (tokenA, tokenB) : (tokenB, tokenA);
+        (token0, token1) = tokenA < tokenB ? (tokenA, tokenB) : (tokenB, tokenA); // sorting
     }
 
     // Implement core logic here
@@ -37,15 +37,15 @@ contract SimpleSwap is ISimpleSwap, ERC20 {
         require(tokenIn != tokenOut, "SimpleSwap: IDENTICAL_ADDRESS");
         require(amountIn > 0, "SimpleSwap: INSUFFICIENT_INPUT_AMOUNT");
 
-        amountOut = (amountIn * reserve1) / (reserve0 + amountIn);
+        amountOut = (amountIn * reserve1) / (reserve0 + amountIn); // come from (X + X') * (Y - Y') = XY
 
-        if (amountOut > 0) IERC20(tokenIn).transferFrom(msg.sender, address(this), amountIn); // transferFrom token0
-        if (amountOut > 0) IERC20(tokenOut).transfer(msg.sender, amountOut); // transfer token1
+        if (amountOut > 0) IERC20(tokenIn).transferFrom(msg.sender, address(this), amountIn); // msg.sender uses tokenIn to swap tokenOut
+        if (amountOut > 0) IERC20(tokenOut).transfer(msg.sender, amountOut); // transfer tokenOut to msg.sender
 
-        uint balance0 = IERC20(tokenIn).balanceOf(address(this));
-        uint balance1 = IERC20(tokenOut).balanceOf(address(this));
+        uint balance0 = IERC20(tokenIn).balanceOf(address(this)); // get new balance of tokenIn
+        uint balance1 = IERC20(tokenOut).balanceOf(address(this)); // get new balance of tokenOut
 
-        _update(balance0, balance1);
+        _update(balance0, balance1); // update token0, token1 balance
         emit Swap(msg.sender, tokenIn, tokenOut, amountIn, amountOut);
     }
 
@@ -63,9 +63,9 @@ contract SimpleSwap is ISimpleSwap, ERC20 {
         require(amountBIn > 0, "SimpleSwap: INSUFFICIENT_INPUT_AMOUNT");
 
         if (reserve0 == 0 && reserve1 == 0) {
-            (amountA, amountB) = (amountAIn, amountBIn);
+            (amountA, amountB) = (amountAIn, amountBIn); // there is no tokens in pool, Add liquidity to the pool
         } else {
-            uint amountBOptimal = quote(amountAIn, reserve0, reserve1);
+            uint amountBOptimal = quote(amountAIn, reserve0, reserve1); // compare the optimal and desire amount
             if (amountBOptimal <= amountBIn) {
                 (amountA, amountB) = (amountAIn, amountBOptimal);
             } else {
@@ -75,23 +75,24 @@ contract SimpleSwap is ISimpleSwap, ERC20 {
             }
         }
 
-        IERC20(token0).transferFrom(msg.sender, address(this), amountA);
-        IERC20(token1).transferFrom(msg.sender, address(this), amountB);
-        // mint
-        uint balance0 = IERC20(token0).balanceOf(address(this));
-        uint balance1 = IERC20(token1).balanceOf(address(this));
-        uint amount0 = balance0.sub(reserve0);
-        uint amount1 = balance1.sub(reserve1);
+        IERC20(token0).transferFrom(msg.sender, address(this), amountA); // msg.sender send token0 to this address
+        IERC20(token1).transferFrom(msg.sender, address(this), amountB); // msg.sender send token1 to this address
 
-        uint _totalSupply = totalSupply(); // gas savings, must be defined here since totalSupply can update in _mintFee
+        uint balance0 = IERC20(token0).balanceOf(address(this)); // update token0 balance
+        uint balance1 = IERC20(token1).balanceOf(address(this)); // update token1 balance
+        uint amount0 = balance0.sub(reserve0); // amountA ?
+        uint amount1 = balance1.sub(reserve1); // amountB ?
+
+        uint _totalSupply = totalSupply(); // get liquidity totalSupply
         if (_totalSupply == 0) {
-            liquidity = Math.sqrt(amount0.mul(amount1));
+            // calculate liquidity
+            liquidity = Math.sqrt(amount0.mul(amount1)); // (1) no liquidity yet
         } else {
-            liquidity = Math.min(amount0.mul(_totalSupply) / reserve0, amount1.mul(_totalSupply) / reserve1);
+            liquidity = Math.min(amount0.mul(_totalSupply) / reserve0, amount1.mul(_totalSupply) / reserve1); // totalSupply != 0
         }
         require(liquidity > 0, "INSUFFICIENT_LIQUIDITY_MINTED");
-        _mint(msg.sender, liquidity);
-        _update(balance0, balance1);
+        _mint(msg.sender, liquidity); // mint liquidity token to msg.sender
+        _update(balance0, balance1); // update token0, token1 balance
 
         emit Transfer(address(0), msg.sender, liquidity);
         emit AddLiquidity(msg.sender, amount0, amount1, liquidity);
@@ -104,22 +105,22 @@ contract SimpleSwap is ISimpleSwap, ERC20 {
     function removeLiquidity(uint256 liquidity) external override returns (uint256 amountA, uint256 amountB) {
         require(liquidity > 0, "SimpleSwap: INSUFFICIENT_LIQUIDITY_BURNED");
 
-        IERC20(address(this)).transferFrom(msg.sender, address(this), liquidity);
-        //    burn
-        uint balance0 = IERC20(token0).balanceOf(address(this));
-        uint balance1 = IERC20(token1).balanceOf(address(this));
+        IERC20(address(this)).transferFrom(msg.sender, address(this), liquidity); // msg.sender transfer lp token to this address
 
-        uint _totalSupply = totalSupply(); // gas savings, must be defined here since totalSupply can update in _mintFee
-        amountA = liquidity.mul(balance0) / _totalSupply; // using balances ensures pro-rata distribution
-        amountB = liquidity.mul(balance1) / _totalSupply; // using balances ensures pro-rata distribution
+        uint balance0 = IERC20(token0).balanceOf(address(this)); // get balance of token0
+        uint balance1 = IERC20(token1).balanceOf(address(this)); // get balance of token1
+
+        uint _totalSupply = totalSupply(); //
+        amountA = liquidity.mul(balance0) / _totalSupply; // calculate amount of token0 to msg.sender
+        amountB = liquidity.mul(balance1) / _totalSupply; // calculate amount of token1 to msg.sender
         require(amountA > 0 && amountB > 0, "INSUFFICIENT_LIQUIDITY_BURNED");
-        _burn(address(this), liquidity);
-        IERC20(token0).transfer(msg.sender, amountA);
-        IERC20(token1).transfer(msg.sender, amountB);
-        balance0 = IERC20(token0).balanceOf(address(this));
-        balance1 = IERC20(token1).balanceOf(address(this));
+        _burn(address(this), liquidity); // burn lp token
+        IERC20(token0).transfer(msg.sender, amountA); // transfer token0 to msg.sender
+        IERC20(token1).transfer(msg.sender, amountB); // transfer token1 to msg.sender
+        balance0 = IERC20(token0).balanceOf(address(this)); // get balance of token0 after transfer
+        balance1 = IERC20(token1).balanceOf(address(this)); // get balance of token0 after transfer
 
-        _update(balance0, balance1);
+        _update(balance0, balance1); // update
 
         emit Transfer(address(this), address(0), liquidity);
     }
