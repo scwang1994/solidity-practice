@@ -17,10 +17,6 @@ contract SimpleSwap is ISimpleSwap, ERC20 {
 
     uint112 private reserve0; // uses single storage slot, accessible via getReserves
     uint112 private reserve1; // uses single storage slot, accessible via getReserves
-    uint32 private blockTimestampLast; // uses single storage slot, accessible via getReserves
-
-    uint public price0CumulativeLast;
-    uint public price1CumulativeLast;
 
     constructor(address tokenA, address tokenB) ERC20("SimpleSwap", "SimpleSwap") {
         require(isContract(tokenA), "SimpleSwap: TOKENA_IS_NOT_CONTRACT");
