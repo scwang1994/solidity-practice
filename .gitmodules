@@ -1,3 +1,6 @@
 [submodule "week9/erc721a/lib/openzeppelin-contracts"]
 	path = week9/erc721a/lib/openzeppelin-contracts
 	url = https://github.com/openzeppelin/openzeppelin-contracts
+[submodule "week11/section3/FlashSwapPractice/lib/openzeppelin-contracts"]
+	path = week11/section3/FlashSwapPractice/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
