@@ -5,12 +5,10 @@ import { ISimpleSwap } from "./interface/ISimpleSwap.sol";
 import { ERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "./libraries/Math.sol";
 import "./libraries/SafeMath.sol";
-import "./libraries/UQ112x112.sol";
 import "./interface/IERC20.sol";
 
 contract SimpleSwap is ISimpleSwap, ERC20 {
     using SafeMath for uint;
-    using UQ112x112 for uint224;
 
     address public token0;
     address public token1;
