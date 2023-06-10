@@ -254,7 +254,7 @@ contract SimpleCompoundTest is Test {
         // same as test2
 
         // change oracle tokenB
-        priceOracle.setUnderlyingPrice(CToken(address(cYT)), 50);
+        priceOracle.setUnderlyingPrice(CToken(address(cYT)), 99);
         vm.startPrank(user2);
 
         // check user1 has excess collateral
