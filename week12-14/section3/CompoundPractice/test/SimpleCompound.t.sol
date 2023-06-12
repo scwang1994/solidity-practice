@@ -89,8 +89,8 @@ contract SimpleCompoundTest is Test {
         unitrollerProxy._supportMarket(CToken(address(cYT)));
 
         // set tokenA, tokenB oracle price
-        priceOracle.setUnderlyingPrice(CToken(address(cMT)), 1);
-        priceOracle.setUnderlyingPrice(CToken(address(cYT)), 100);
+        priceOracle.setUnderlyingPrice(CToken(address(cMT)), 1e18);
+        priceOracle.setUnderlyingPrice(CToken(address(cYT)), 100e18);
         // set cTokenB collateral factor
         unitrollerProxy._setCollateralFactor(CToken(address(cMT)), 1 * 1e18);
         unitrollerProxy._setCollateralFactor(CToken(address(cYT)), 5 * 1e17);
@@ -255,7 +255,7 @@ contract SimpleCompoundTest is Test {
         // same as test2
 
         // change oracle tokenB
-        priceOracle.setUnderlyingPrice(CToken(address(cYT)), 99);
+        priceOracle.setUnderlyingPrice(CToken(address(cYT)), 99e18);
         vm.startPrank(user2);
 
         // check user1 has excess collateral
