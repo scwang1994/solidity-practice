@@ -19,7 +19,7 @@ contract CompoundPracticeTest is CompoundPracticeSetUp {
 
     function setUp() public override {
         uint256 forkId = vm.createFork(
-            "https://eth-mainnet.g.alchemy.com/v2/Pl6OPgnY0_d3PT09U1iddzBXevWmiIKa",
+            vm.envString("MAINNET_RPC_URL"),
             12299047
         );
         // 3. select fork

@@ -15,8 +15,7 @@ contract TestCase is Test {
     address user1 = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
     address baycAddr = 0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D;
 
-    string MAINNET_RPC_URL =
-        "https://eth-mainnet.g.alchemy.com/v2/Pl6OPgnY0_d3PT09U1iddzBXevWmiIKa";
+    string MAINNET_RPC_URL = vm.envString("MAINNET_RPC_URL");
 
     function setUp() public {
         // 1. set bayc

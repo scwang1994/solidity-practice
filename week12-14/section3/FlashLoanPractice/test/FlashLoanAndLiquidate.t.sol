@@ -41,7 +41,7 @@ contract FlashLoanAndLiquidateTest is Test {
 
     function setUp() public {
         uint256 forkId = vm.createFork(
-            "https://eth-mainnet.g.alchemy.com/v2/Pl6OPgnY0_d3PT09U1iddzBXevWmiIKa",
+            vm.envString("MAINNET_RPC_URL"),
             17465000
         );
         // select fork
